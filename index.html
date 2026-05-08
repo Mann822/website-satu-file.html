@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <meta Charset="utp-8">
+    <meta name="viewport" content="with= device-width,iitial scale=1,0">
+    <title>website sederhana</title>
+    <style>
+        body {
+            font-family: arial,sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header{
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align:center;
+        }
+        nav{
+            background:10px;
+            text-align:center;
+        }
+        nav a{
+            color: white;
+            margin:0 10px;
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        main{
+            padding:20px ;
+        }
+        section{
+            margin-bottom:20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        }
+        footer{
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position:fixed;
+            bottom: 0;
+            width:100%;
+        }
+        button{
+            padding:10px 15px;
+            background:#28a745;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+    </style>
+</body>
+</html>
+
+<header>
+    <H1>website satu file</H1>
+    <p>html+css+javascript dalam satu file</p>
+</header>
+
+<nav> 
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+</nav>
+
+<>
+    <section>id="home"
+        <h2>home</h2>
+        <p>ini adalah tampilan website sederhana</p>
+        <button onclick="tampilkanpesan()">klik saya</button>
+    </section>
+  
+    <section id="about">
+        <h2>About</h2>
+        <p>web ini dibuat dalam satu file menggunakan html,css,dan javascript</p>
+    </section>
+
+<section id="contact">
+<h2>contact</h2>
+<form onsubmit="kirimform(event)">
+    <label>nama:</label><br>
+    <input type="text"id="nama"
+    required><br><br>
+</form>
+</section>
+<label>Email:</label><br>
+<input type="email"
+required><br><br>
+ <button type="submit">kirim</button>
+</main>
+
+<footer>
+    <p>&copy: 2026 website sederhana</p>
+</footer>
+<script>
+    function kirimform(event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+
+    alert("Terima kasih, " + nama + "! Pesan Anda terkirim.");
+}
+</script>
